@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+  <style>
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .is-paddingless-horizontal {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns:
+        [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+    }
+
+    .grid * {
+      grid-column: md;
+    }
+
+    .grid-xl {
+      grid-column: xl;
+    }
+
+    @media (max-width: 672px) {
+      :root {
+        font-size: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- .section -->
+  <section class="section is-paddingless-horizontal">
+    <div class="container grid">
+      <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="is-active"><a href="#" aria-current="page">How to build a beautiful blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <!-- /.section -->
+
+  <!-- .section -->
+  <section class="section is-paddingless-horizontal" style="padding-top: 0;">
+    <div class="container grid" style="max-width: 1024px;">
+
+      <!-- .media -->
+      <article class="media center">
+        <figure class="media-left">
+          <span class="image is-64x64">
+            <img class="is-rounded" src="images/avatar.png">
+          </span>
+        </figure>
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <strong>Todoroki</strong> <a>@todoroki</a><br>
+              <span class="has-text-grey">Half-hot, half-cold<br>
+                <time datetime="2018-10-20">Oct 20</time> · 10 min read</span>
+            </p>
+          </div>
+        </div>
+      </article>
+      <!-- /.media -->
+
+      <!-- .section -->
+      <div class="section is-paddingless-horizontal">
+        <h1 class="title is-2">
+          Shoto Todoroki
+        </h1>
+        <h2 class="subtitle is-3 has-text-grey-light">
+          One of the main protagonists of My Hero Academia.
+        </h2>
+      </div>
+      <!-- /.section -->
+
+      <!-- .columns -->
+      <figure class="columns is-mobile is-variable is-0 is-marginless grid-xl">
+        <div class="column">
+          <div class="image card">
+            <a><img src="images/blog-1.jpg"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="image card">
+            <a><img src="images/blog-2.jpg"></a>
+          </div>
+        </div>
+        <div class="column">
+          <div class="image card">
+            <a><img src="images/blog-3.jpg"></a>
+          </div>
+        </div>
+      </figure>
+      <figcaption class="level">
+        <small class="level-item has-text-grey">
+          Blog example
+        </small>
+      </figcaption>
+      <!-- /.columns -->
+
+      <div class="content is-medium">
+        <p>
+          Shoto is a teenage boy who is relatively tall for his age. He has longish hair, evenly split between white on his right-side and crimson on his left, visibly reflecting his Quirk. He has a burn scar over his left eye from childhood. He possesses <strong>heterochromia</strong>, which causes his left eye to be turquoise and his right eye to be gray. In a few episodes, it's seen that he has an impressive physique, noted by Kohei Horikoshi himself in Shoto's Manga profile. Several girls have claimed that he is incredibly handsome, despite his scar. Mina even claimed that he is the best-looking guy in the class.
+        </p>
+        <p>
+          In his initial Hero Costume, Shoto wears a simple white shirt, white pants, white boots, and gold-colored combat vest. He also has ice covering his left torso, arm, and head, as a way of rejecting the other half of his Quirk.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <!-- /.section -->
+
+</body>
+
+</html>
